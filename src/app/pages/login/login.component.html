@@ -1,0 +1,43 @@
+<div class="main__container">
+	<div class="login-card">
+
+		<main class="login-content">
+			<span class="login-header">Login</span>
+
+			<!-- Login form -->
+			<form class="login-form"
+			      (ngSubmit)="login($event)"
+			      #authForm="ngForm">
+
+				<!-- Email -->
+				<input ngModel type="email"
+				       autofocus placeholder="Email" name="email"
+				       class="login-input" required>
+
+				<!-- Password -->
+				<input ngModel type="password"
+				       placeholder="Password" name="password"
+				       class="login-input" minlength="6" required>
+
+				<button class="login-btn" [disabled]="!authForm.form.valid">Login</button>
+			</form>
+
+			<!-- Signup link -->
+			<div class="signup-link-wrapper">
+				<span class="signup-notice">Don't have an account?</span>
+				<a class="signup-link" routerLink="/signup">Sign up</a>
+			</div>
+
+		</main>
+
+		<!-- Signup links -->
+		<aside class="login-aside">
+			<div class="login-aside-overlay"></div>
+			<h1 class="login-welcome-text">Welcome Back!</h1>
+			<hr class="login-aside-hr">
+		</aside>
+	</div>
+</div>
+
+
+<app-error [message]="errorMessage"></app-error>
