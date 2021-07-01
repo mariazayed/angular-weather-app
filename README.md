@@ -1,6 +1,6 @@
 # Angular 12 + RxJs + Firebase 🔥
 
-##### [**Check the live preview**]()
+##### [**Check the live preview**](https://angular-weather-appp.herokuapp.com/)
 
 **Login credentials**
 * Email: **test@test.com**
