@@ -18,7 +18,7 @@
 * ✅ Modern CSS: Grid Layout & Flex Box
 
 ### To use the Open Weather Map API:
-* Create a new account (It's free)
+* Create a new account (it's free)
 * Copy your APPID 
 * Paste it to the appId field in the environment file
 * Wait a couple of hours to activate the APPID (For me, it took 5 hours to activate)
